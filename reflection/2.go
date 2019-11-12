@@ -7,9 +7,15 @@ import (
 
 // Type & Kind
 
-func f2() {
+type MyInt int
 
+func F2() {
 	var a MyStruct
 
+	var i MyInt
+	var j int
+
 	fmt.Println(reflect.TypeOf(a), reflect.TypeOf(a).Kind())
+
+	fmt.Println(reflect.TypeOf(i).Kind() == reflect.TypeOf(j).Kind())
 }

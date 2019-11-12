@@ -9,18 +9,20 @@ import (
 
 type MyError2 error
 
-func Isterika2() error {
+func Isterika2() (string, error) {
 	err := MyError(errors.New("Осень!"))
 	if  err != nil {
-		return err
+		return "", err
 	}
 	//...
-	return nil
+	return "abc", nil
 }
 
 func f2() {
-	err := Isterika2()
+	abc, err := Isterika2()
 	if err != nil {
 		fmt.Println("Найдена ошибка:", err.Error())
+		return
 	}
+	fmt.Println(abc)
 }
