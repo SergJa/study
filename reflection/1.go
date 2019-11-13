@@ -17,7 +17,7 @@ var jsonString = `
 }
 `
 
-func f1() {
+func F1() {
 	var unknown map[string]interface{}
 	fmt.Println(json.Unmarshal([]byte(jsonString), &unknown))
 

@@ -16,7 +16,7 @@ func (m MyStruct) MyMethod(a string, b int) {
 	fmt.Println(m.A, a, b + m.B)
 }
 
-func f3() {
+func F3() {
 	var unknown interface{}//MyStruct{}
 
 	var unknownType = reflect.TypeOf(unknown)

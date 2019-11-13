@@ -3,7 +3,7 @@ package reflection
 // рефлексия Value
 import "reflect"
 
-func main() {
+func F4() {
 	var unknown = &MyStruct{"A in struct", 7}
 
 	var unknownValue = reflect.ValueOf(unknown)
